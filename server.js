@@ -10,6 +10,18 @@ const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
 const Joi = require('joi');
 
+console.log('PORT:', process.env.PORT);
+console.log('BASE_URL:', process.env.BASE_URL);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+
+process.on('uncaughtException', err => {
+  console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', err => {
+  console.error('Unhandled Rejection:', err);
+});
+
 const { config, getIceServers, validateEnv } = require('./config');
 
 validateEnv();
