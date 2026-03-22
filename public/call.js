@@ -20,6 +20,7 @@ let voiceRecorder = null;
 let voiceChunks = [];
 let isRecordingVoice = false;
 let voiceRecordingStartTime = null;
+let voiceStream = null;
 
 let callEnded = false;
 
@@ -433,6 +434,10 @@ function endCall() {
   callEnded = true;
   stopCallTimer();
   stopNetworkMonitoring();
+  
+  if (isRecordingVoice) {
+    window.stopVoiceRecording();
+  }
   
   if (socket && socket.connected && currentRoomId) {
     socket.emit('leave-room', currentRoomId);
@@ -902,9 +907,9 @@ window.startVoiceRecording = async function() {
   if (isRecordingVoice) return;
   
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    voiceStream = await navigator.mediaDevices.getUserMedia({ audio: true });
     
-    voiceRecorder = new MediaRecorder(stream, { mimeType: 'audio/webm; codecs=opus' });
+    voiceRecorder = new MediaRecorder(voiceStream, { mimeType: 'audio/webm; codecs=opus' });
     voiceChunks = [];
     
     voiceRecorder.ondataavailable = (e) => {
@@ -920,9 +925,12 @@ window.startVoiceRecording = async function() {
         const audioData = e.target.result;
         addChatMessage('', true, null, audioData);
         socket.emit('chat-message', { roomId: currentRoomId, text: '', photo: null, audio: audioData });
-        stream.getTracks().forEach(track => track.stop());
       };
       reader.readAsDataURL(audioBlob);
+      if (voiceStream) {
+        voiceStream.getTracks().forEach(track => track.stop());
+        voiceStream = null;
+      }
     };
     
     isRecordingVoice = true;
@@ -965,6 +973,11 @@ window.stopVoiceRecording = function() {
   }
   voiceRecorder = null;
   voiceChunks = [];
+  
+  if (voiceStream) {
+    voiceStream.getTracks().forEach(track => track.stop());
+    voiceStream = null;
+  }
   
   if (window.voiceRecordingTimer) {
     clearInterval(window.voiceRecordingTimer);
@@ -1145,6 +1158,10 @@ function showCallEnded() {
   callEnded = true;
   stopCallTimer();
   stopNetworkMonitoring();
+  
+  if (isRecordingVoice) {
+    window.stopVoiceRecording();
+  }
   
   if (peerConnection) {
     peerConnection.close();
