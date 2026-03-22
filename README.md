@@ -38,6 +38,8 @@ If this tool helps even one person connect with a loved one, it was worth buildi
 ### 🇬🇧 English
 - 🔓 **No login required** – Just start a call and share the link
 - 📱 **QR code sharing** – Easy sharing for mobile users
+- 📤 **Share button** – Share call link via Web Share API
+- 💬 **SMS sharing** – Send call link via SMS
 - 👴 **Elderly-initiated calls** – Create contact cards for seniors to call you
 - 🎴 **Printable contact cards** – Large, clear print with high contrast
 - 📋 **Multiple contacts** – Manage and save multiple contact cards
@@ -69,6 +71,8 @@ If this tool helps even one person connect with a loved one, it was worth buildi
 ### 🇸🇪 Svenska
 - 🔓 **Ingen inloggning krävs** – Starta bara ett samtal och dela länken
 - 📱 **QR-kodsdelning** – Enkel delning för mobilanvändare
+- 📤 **Dela-knapp** – Dela samtalslänk via Web Share API
+- 💬 **SMS-delning** – Skicka samtalslänk via SMS
 - 👴 **Äldre kan ringa** – Skapa kontaktkort för äldre att ringa dig
 - 🎴 **Utskrivbara kontaktkort** – Stor, tydlig print med hög kontrast
 - 📋 **Flera kontakter** – Hantera och spara flera kontaktkort
