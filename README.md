@@ -8,6 +8,14 @@
   <img src="Samtalsvän.png" alt="Samtalsvän Preview" width="100%">
 </p>
 
+## 🟦 What is Samtalsvän?
+
+Samtalsvän is a very simple video calling tool for elderly people.
+
+**No apps. No login. No complexity.**
+
+Start a call → share a link or QR code → talk instantly.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
