@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Samtalsvän Logo" width="200">
+  <img src="public/logo.png" alt="Samtalsvän Logo" width="200">
 </p>
 
 <h1 align="center">Samtalsvän — One-Click Video Calls for Elderly (No Apps, No Login)</h1>
