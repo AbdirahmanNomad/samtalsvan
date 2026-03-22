@@ -16,19 +16,6 @@ Samtalsvän is a very simple video calling tool for elderly people.
 
 Start a call → share a link or QR code → talk instantly.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
-[![WebRTC](https://img.shields.io/badge/WebRTC-Enabled-orange.svg)](https://webrtc.org/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
-[![GitHub issues](https://img.shields.io/github/issues/AbdirahmanNomad/samtalsvan.svg)](https://github.com/AbdirahmanNomad/samtalsvan/issues)
-[![GitHub stars](https://img.shields.io/github/stars/AbdirahmanNomad/samtalsvan.svg)](https://github.com/AbdirahmanNomad/samtalsvan/stargazers)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/eller/badges)
-
-*A simple, accessible WebRTC video call application designed for elderly users.*
-
-*En enkel, tillgänglig WebRTC-videosamtalsapplikation designad för äldre användare.*
-
 ---
 
 ## 🙏 Why This Project Exists
@@ -38,6 +25,58 @@ I wanted to give something back to the country that welcomed me. Sweden has a gr
 **Samtalsvän** (Swedish for "Conversation Friend") is my small contribution: a tool that turns a video call into a one-click experience. A family member or volunteer creates a call, prints a QR code, and the elderly person simply scans it – that's it. No login, no password, no frustration.
 
 If this tool helps even one person connect with a loved one, it was worth building.
+
+---
+
+## 👴 How It Helps Elderly
+
+### For the Family Member
+1. Create a contact card for your elderly relative
+2. Print it out and give it to them
+3. Keep your browser open
+
+### For the Elderly Person
+1. Scan the QR code with their phone camera
+2. That's it – the video call starts immediately
+
+**No apps to install. No accounts to create. No passwords to remember.**
+
+Just a printed card and a phone camera.
+
+---
+
+## 📖 How to Use
+
+### Starting a Video Call
+
+1. Open the app in your browser
+2. Click **"Starta videosamtal"** (Start video call)
+3. Share the link or QR code with the other person
+4. They scan/click and the call begins!
+
+### Creating a Contact Card (for Elderly)
+
+1. Click **"Skapa kontaktkort"** (Create contact card)
+2. Enter a name (optional)
+3. Click **"Skapa kontaktkort"** to generate
+4. **Print the card** and give it to your elderly relative
+5. Keep your browser open on the "Wait for calls" page
+6. When they scan the QR code, you'll receive an incoming call!
+
+### Managing Contacts
+
+1. Click **"Mina kontakter"** (My contacts) on the start screen
+2. View all saved contact cards
+3. Print any contact card again
+4. Delete contacts you no longer need
+
+### During a Call
+
+- **Mute/Unmute**: Click the microphone icon
+- **Camera on/off**: Click the camera icon
+- **Switch camera**: Click the switch icon (mobile only)
+- **Fullscreen**: Click the fullscreen icon
+- **Chat**: Click the chat icon to open the chat panel
 
 ---
 
@@ -90,7 +129,16 @@ If this tool helps even one person connect with a loved one, it was worth buildi
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (For Developers)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
+[![WebRTC](https://img.shields.io/badge/WebRTC-Enabled-orange.svg)](https://webrtc.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
+[![GitHub issues](https://img.shields.io/github/issues/AbdirahmanNomad/samtalsvan.svg)](https://github.com/AbdirahmanNomad/samtalsvan/issues)
+[![GitHub stars](https://img.shields.io/github/stars/AbdirahmanNomad/samtalsvan.svg)](https://github.com/AbdirahmanNomad/samtalsvan/stargazers)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/eller/badges)
 
 ### Prerequisites
 
@@ -140,41 +188,6 @@ For production, you need TURN servers for calls to work behind firewalls/NAT:
 | `TURN_SERVERS` | Custom TURN servers (format: `turn:server:port\|username\|credential`) |
 | `TURN_USERNAME` | Default TURN username |
 | `TURN_CREDENTIAL` | Default TURN credential |
-
----
-
-## 📖 How to Use
-
-### Starting a Video Call
-
-1. Open the app in your browser
-2. Click **"Starta videosamtal"** (Start video call)
-3. Share the link or QR code with the other person
-4. They scan/click and the call begins!
-
-### Creating a Contact Card (for Elderly)
-
-1. Click **"Skapa kontaktkort"** (Create contact card)
-2. Enter a name (optional)
-3. Click **"Skapa kontaktkort"** to generate
-4. **Print the card** and give it to your elderly relative
-5. Keep your browser open on the "Wait for calls" page
-6. When they scan the QR code, you'll receive an incoming call!
-
-### Managing Contacts
-
-1. Click **"Mina kontakter"** (My contacts) on the start screen
-2. View all saved contact cards
-3. Print any contact card again
-4. Delete contacts you no longer need
-
-### During a Call
-
-- **Mute/Unmute**: Click the microphone icon
-- **Camera on/off**: Click the camera icon
-- **Switch camera**: Click the switch icon (mobile only)
-- **Fullscreen**: Click the fullscreen icon
-- **Chat**: Click the chat icon to open the chat panel
 
 ---
 
