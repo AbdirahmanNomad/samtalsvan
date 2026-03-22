@@ -53,6 +53,8 @@ When reporting bugs, please include:
 4. Actual behavior
 5. Screenshots if applicable
 
+Open issues at: https://github.com/AbdirahmanNomad/samtalsvan/issues
+
 ### Feature Requests
 
 Open an issue with:
@@ -110,6 +112,8 @@ När du rapporterar buggar, vänligen inkludera:
 3. Förväntat beteende
 4. Faktiskt beteende
 5. Skärmdumpar om tillämpligt
+
+Öppna ärenden på: https://github.com/AbdirahmanNomad/samtalsvan/issues
 
 ### Funktionsförslag
 

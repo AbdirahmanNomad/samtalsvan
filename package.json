@@ -1,20 +1,70 @@
 {
   "name": "samtalsvan",
   "version": "1.0.0",
-  "description": "WebRTC video call application for elderly users",
-  "main": "server.js",
-  "author": "Abdirahman Ahmed <hello@abdirahman.net>",
+  "description": "Simple, accessible WebRTC video calls designed for elderly users - Enkla, tillgänglig WebRTC-videosamtal för äldre användare",
+  "keywords": [
+    "webrtc",
+    "video-call",
+    "elderly",
+    "accessibility",
+    "seniors",
+    "video-chat",
+    "p2p",
+    "swedish",
+    "qr-code",
+    "no-login"
+  ],
+  "homepage": "https://github.com/AbdirahmanNomad/samtalsvan#readme",
+  "bugs": {
+    "url": "https://github.com/AbdirahmanNomad/samtalsvan/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdirahmanNomad/samtalsvan.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/AbdirahmanNomad"
+  },
   "license": "MIT",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "NODE_ENV=development node server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "docker": "docker-compose up",
+    "docker:down": "docker-compose down",
+    "health": "curl -f http://localhost:3000/health",
+    "security:audit": "npm audit --audit-level=moderate",
+    "clean": "rm -rf node_modules"
   },
   "dependencies": {
-    "express": "^5.2.1",
-    "socket.io": "^4.8.1",
-    "qrcode": "^1.5.4"
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "author": {
+    "name": "Abdirahman Ahmed",
+    "email": "hello@abdirahman.net",
+    "url": "https://abdirahman.net"
+  },
+  "contributors": [],
+  "maintainers": [
+    {
+      "name": "Abdirahman Ahmed",
+      "email": "hello@abdirahman.net"
+    }
+  ]
 }

@@ -16,7 +16,14 @@
 ### What We Do Store
 
 - **Room IDs**: Temporary identifiers for call rooms (auto-generated UUIDs)
-- **Call duration**: Rooms are automatically deleted after 2 hours of inactivity
+- **Contact codes**: 6-character codes for elderly to call family (auto-generated)
+- **Call duration**: Rooms and contacts are automatically deleted after 24 hours of inactivity
+
+### External Services
+
+- **Open-Meteo Weather API**: Used for weather widget. Location is requested from browser but never stored on our servers.
+  - No API key required
+  - Data is requested client-side only
 
 ### What We Don't Store
 

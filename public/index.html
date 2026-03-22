@@ -4,12 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Samtalsvän - Videosamtal</title>
-  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  
+  <meta property="og:title" content="Samtalsvän — One-Click Video Calls for Elderly">
+  <meta property="og:description" content="No Apps, No Login — Simple video calls designed for elderly users. Just scan a QR code to connect.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/AbdirahmanNomad/samtalsvan/main/Samtalsvän.png">
+  <meta property="og:url" content="https://github.com/AbdirahmanNomad/samtalsvan">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Samtalsvän — One-Click Video Calls for Elderly">
+  <meta name="twitter:description" content="No Apps, No Login — Simple video calls designed for elderly users.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/AbdirahmanNomad/samtalsvan/main/Samtalsvän.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <script src="/adapter.js"></script>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <div id="app"></div>
   <script src="/socket.io/socket.io.js"></script>
+  <script>
+    (async function() {
+      try {
+        const response = await fetch('/ice-servers');
+        const data = await response.json();
+        window.ICE_SERVERS = data.iceServers;
+      } catch (e) {
+        console.warn('Could not fetch ICE servers, using defaults');
+      }
+    })();
+  </script>
   <script src="/call.js"></script>
 </body>
 </html>
