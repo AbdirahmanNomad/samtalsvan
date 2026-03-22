@@ -25,9 +25,9 @@
 
 ## 🙏 Why This Project Exists
 
-I'm a Swedish citizen, originally from Somalia. I wanted to give something back to the country that welcomed me. Sweden has a growing elderly population, and many seniors feel isolated – especially when technology becomes a barrier. Existing video tools often require accounts, downloads, or confusing steps.
+Sweden has a growing elderly population, and many seniors feel isolated – especially when technology becomes a barrier. Existing video tools often require accounts, downloads, or confusing steps.
 
-**Samtalsvän** (Swedish for "Conversation Friend") is my small contribution: a tool that turns a video call into a one-click experience. A family member or volunteer creates a call, prints a QR code, and the elderly person simply scans it – that's it. No login, no password, no frustration.
+**Samtalsvän** (Swedish for "Conversation Friend") is a tool that turns a video call into a one-click experience. A family member or volunteer creates a call, prints a QR code, and the elderly person simply scans it – that's it. No login, no password, no frustration.
 
 If this tool helps even one person connect with a loved one, it was worth building.
 
