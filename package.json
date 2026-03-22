@@ -41,6 +41,7 @@
     "clean": "rm -rf node_modules"
   },
   "dependencies": {
+    "dotenv": "^17.3.1",
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
     "helmet": "^8.0.0",
